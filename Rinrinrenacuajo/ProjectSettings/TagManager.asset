@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Manzana
+  - Move
+  - Obstaculo
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Suelo
+  - Plataforma
+  - Fondo
+  - Personajes
+  - Items
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 1747636643
+    locked: 0
+  - name: Suelo
+    uniqueID: 3992130257
+    locked: 0
+  - name: Plataforma
+    uniqueID: 1648590781
+    locked: 0
+  - name: Personajes
+    uniqueID: 3434311215
+    locked: 0
+  - name: Items
+    uniqueID: 3861111821
+    locked: 0
