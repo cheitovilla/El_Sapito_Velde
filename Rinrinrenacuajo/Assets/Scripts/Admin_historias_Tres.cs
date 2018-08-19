@@ -8,117 +8,85 @@ public class Admin_historias_Tres : MonoBehaviour {
 	public GameObject panel_historia;
 	public GameObject button_historia;
 
-	public AudioSource audio_historia1;
-	public GameObject tex1;
 	public GameObject buttonToHistory2;
 	//------------------
 	public AudioSource audio_historia2;
 	public GameObject text2;
 	public GameObject buttonToHistory3;
-	public GameObject buttonBackHistory1;
 	//------------------
 	public AudioSource audio_historia3;
 	public GameObject text3;
 	public GameObject buttonBackHistory2;
 
+	public bool historia;
+	public GameObject player;
 	// Use this for initialization
 	void Start () {
+		historia = true;
 		button_historia.SetActive (false);
-		buttonBackHistory1.SetActive (false);
-		anim_papiro = panel_historia.GetComponent<Animator> ();
+		audio_historia2.Play ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		if (historia == true)
+		{
+			Time.timeScale = 0;
+		} 
+		else 
+		{
+			Time.timeScale = 1;
+		}	
+		if (player.transform.position.x >= 175) {
+			Time.timeScale = 0;
+		}
 	}
 
 	public void ShowHistoryScene3(){
-		tex1.SetActive (true);
-		text2.SetActive (false);
+		historia = true;
+		panel_historia.SetActive (true);
+		text2.SetActive (true);
 		text3.SetActive (false);
 
-		anim_papiro.SetBool ("sube", true);
-		anim_papiro.SetBool ("baja", false);
-
 		button_historia.SetActive (false);
+		buttonToHistory3.SetActive (true);
 
-		buttonToHistory2.SetActive (true);
-		buttonToHistory3.SetActive (false);
-		buttonBackHistory1.SetActive (false);
-		buttonBackHistory2.SetActive (false);
-
-		audio_historia1.Play ();
-		audio_historia2.Stop ();
+		audio_historia2.Play ();
 		audio_historia3.Stop ();
 
 	}
 
 	public void CloseHistoryScene3(){
-		anim_papiro.SetBool("sube",false);
-		anim_papiro.SetBool ("baja", true);
-		audio_historia1.Stop ();
+		historia = false;
 		audio_historia2.Stop ();
 		audio_historia3.Stop ();
 		button_historia.SetActive (true);
+		panel_historia.SetActive (false);
 	}
 
-	public void NextHistoryTwo(){
-		tex1.SetActive (false);
-		text2.SetActive (true); //activo text2
-		text3.SetActive (false);
 
-		buttonToHistory2.SetActive (false);
-		buttonToHistory3.SetActive (true);
-		buttonBackHistory1.SetActive (true);
-		buttonBackHistory2.SetActive (false);
-
-		audio_historia1.Stop ();
-		audio_historia2.Play ();
-		audio_historia3.Stop ();
-	}
-
-	public void BackToHistoryOne(){
-		tex1.SetActive (true); //activo text1
-		text2.SetActive (false);
-		text3.SetActive (false);
-
-		buttonToHistory2.SetActive (true);
-		buttonToHistory3.SetActive (false);
-		buttonBackHistory1.SetActive (false);
-		buttonBackHistory2.SetActive (false);
-
-		audio_historia1.Play ();
-		audio_historia2.Stop ();
-		audio_historia3.Stop ();
-	}
 
 	public void NextHistoryThree(){
-		tex1.SetActive (false); 
 		text2.SetActive (false);
 		text3.SetActive (true); //activo text3
 
 		buttonToHistory2.SetActive (false);
 		buttonToHistory3.SetActive (false);
-		buttonBackHistory1.SetActive (false);
 		buttonBackHistory2.SetActive(true);
 
-		audio_historia1.Stop ();
 		audio_historia2.Stop ();
 		audio_historia3.Play ();
 	}
 
 	public void BackToHistoryTwo(){
-		tex1.SetActive (false); 
 		text2.SetActive (true); //activo text2
 		text3.SetActive (false); 
 
 		buttonToHistory2.SetActive (false);
 		buttonToHistory3.SetActive (true);
-		buttonBackHistory1.SetActive (true);
 		buttonBackHistory2.SetActive (false);
 
-		audio_historia1.Stop ();
 		audio_historia2.Play ();
 		audio_historia3.Stop ();
 	}

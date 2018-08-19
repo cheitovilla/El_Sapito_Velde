@@ -7,35 +7,48 @@ public class Admin_historia1 : MonoBehaviour {
 	public GameObject Panel_historia;
 	public GameObject button_historia;
 	public AudioSource audio_historia;
-	Animator anim_papiro;
+	public GameObject player;
+	public bool historia;
 
 	// Use this for initialization
-	void Start () {
-		anim_papiro = Panel_historia.GetComponent<Animator> ();
+	void Start () 
+	{
+		historia = true;
+		audio_historia.Play ();
+		button_historia.SetActive (false);
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		if (historia == true)
+		{
+			Time.timeScale = 0;
+		} 
+		else 
+		{
+			Time.timeScale = 1;
+		}
+		if (player.transform.position.x >= 230) {
+			Time.timeScale = 0;
+		}
 	}
 
-	public void ShowHistory(){
-	//	anim_papiro.SetTrigger("showhistoria");
-		anim_papiro.SetBool ("sube", true);
-		anim_papiro.SetBool ("baja", false);
+
+	public void ShowHistory()
+	{
+		Panel_historia.SetActive (true);
+		historia = true;
 		audio_historia.Play ();
 		button_historia.SetActive (false);
-		//anim_papiro.SetTrigger("showhistoria");
-
 	}
 
-	public void CloseHistory(){
-	//	anim_papiro.SetTrigger ("ocultarhistoria");
-		anim_papiro.SetBool("sube",false);
-		anim_papiro.SetBool ("baja", true);
+	public void CloseHistory()
+	{
+		Panel_historia.SetActive (false);
+		historia = false;
 		audio_historia.Stop ();
 		button_historia.SetActive (true);
-		//anim_papiro.SetTrigger("ocultarhistoria");
+		Panel_historia.SetActive (false);
 	}
-
 }

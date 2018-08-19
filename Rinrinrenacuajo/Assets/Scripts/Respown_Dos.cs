@@ -7,6 +7,8 @@ public class Respown_Dos : MonoBehaviour {
 
 	public GameObject player;
 	public GameObject player2;
+	public GameObject history3;
+	public AudioSource audio3;
 
 	// Use this for initialization
 	void Start () {
@@ -30,8 +32,17 @@ public class Respown_Dos : MonoBehaviour {
 
 
 
-		if (player.transform.position.x>230) {
-			SceneManager.LoadScene ("Scene3");
-		}
+//		if (player.transform.position.x >= 230) {
+//			TerceraScena ();
+//		//	SceneManager.LoadScene ("Scene3");
+//		}
+	}
+
+
+
+	public void Nextscene()
+	{
+		SceneManager.LoadScene ("Scene3");
+		//Time.timeScale = 1;
 	}
 }

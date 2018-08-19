@@ -8,8 +8,10 @@ public class Admin_panel_menu : MonoBehaviour {
 	public GameObject panel_menu;
 	Animator anim;
 
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		anim = panel_menu.GetComponent<Animator> ();
 	}
 	
@@ -18,17 +20,20 @@ public class Admin_panel_menu : MonoBehaviour {
 		
 	}
 
-	public void ShowMenu(){
+	public void ShowMenu()
+	{
 		anim.SetBool ("subemenu", true);
 		anim.SetBool ("bajamenu", false);
 	}
 
-	public void CloseMenu(){
+	public void CloseMenu()
+	{
 		anim.SetBool("subemenu",false);
 		anim.SetBool ("bajamenu", true);
 	}
 
-	public void BackInicial(){
+	public void BackInicial()
+	{
 		SceneManager.LoadScene ("Inicial");
 	}
 

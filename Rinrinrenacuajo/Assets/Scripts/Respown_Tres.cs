@@ -18,8 +18,15 @@ public class Respown_Tres : MonoBehaviour {
 		{
 			player.transform.position = new Vector3(-4.7f, player.transform.position.y);
 		}
-		if (player.transform.position.x>175) {  
-			SceneManager.LoadScene ("Scene4");
-		}
+//		if (player.transform.position.x>175) {  
+//			SceneManager.LoadScene ("Scene4");
+//		}
+	}
+
+
+	public void Nextscene()
+	{
+		SceneManager.LoadScene ("Scene4");
+		//Time.timeScale = 1;
 	}
 }

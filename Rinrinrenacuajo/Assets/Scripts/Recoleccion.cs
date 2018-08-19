@@ -8,33 +8,43 @@ public class Recoleccion : MonoBehaviour {
 	public Text countText;
 	public int count;
 	public AudioSource audio_recoleccion;
+	public GameObject panel_3;
+	public AudioSource audio3;
+	public GameObject buttonH;
 
 	// Use this for initialization
 	void Start () {
 		count = 0;
-		//audio = GetComponent<AudioSource> ();
 	}
-
-//	void OnCollisionEnter2D (Collision2D other){
-//		if (other.gameObject.tag == "Manzana") {
-//			print ("cojiendo");
-//			count = count + 10;
-//			other.gameObject.SetActive (false);
-//			countText.text = count.ToString ();
-//			audio.Play ();
-//		}
-//
-//	}
 
 	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "Manzana") {
-			print ("no me quedo");
+			//print ("no me quedo");
 			Destroy (other.gameObject);
 			count = count + 10;
 			countText.text = count.ToString ();
 			audio_recoleccion.Play ();
 		}
+
+		if (other.gameObject.tag == "Casa") {
+			panel_3.SetActive (true);
+			buttonH.SetActive (false);
+			audio3.Play ();
+			Time.timeScale = 0;
+			//other.gameObject.SetActive (false);
+			//audio.Play ();
+		}
+		if (other.gameObject.tag == "Afura") {
+			panel_3.SetActive (true);
+			buttonH.SetActive (false);
+			audio3.Play ();
+			Time.timeScale = 0;
+			//other.gameObject.SetActive (false);
+			//audio.Play ();
+		}
 	}
+
+
 
 		
 
