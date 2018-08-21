@@ -29,7 +29,7 @@ public class Admin_historia1 : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 		}
-		if (player.transform.position.x >= 230) {
+		if (player.transform.position.x >= 229) {
 			Time.timeScale = 0;
 		}
 	}
