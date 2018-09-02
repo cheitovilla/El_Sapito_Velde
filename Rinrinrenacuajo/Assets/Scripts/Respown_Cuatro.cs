@@ -18,7 +18,7 @@ public class Respown_Cuatro : MonoBehaviour {
 		{
 			player.transform.position = new Vector3(-4.7f, player.transform.position.y);
 		}
-		if (player.transform.position.x>1050) {  //475
+		if (player.transform.position.x>772) {  //475
 			SceneManager.LoadScene ("Historia_Final");
 		}
 	}

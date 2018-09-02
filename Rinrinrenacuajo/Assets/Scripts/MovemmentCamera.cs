@@ -25,8 +25,8 @@ public class MovemmentCamera : MonoBehaviour {
 		lastPlayerPosition = thePlayer.transform.position;
 
 
-		if (transform.position.x> 1017) {
-			transform.position = new Vector3 (1017f, transform.position.y,transform.position.z);
+		if (transform.position.x> 740) {
+			transform.position = new Vector3 (740, transform.position.y,transform.position.z);
 		}
 	}
 

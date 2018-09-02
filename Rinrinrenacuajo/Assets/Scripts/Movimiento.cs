@@ -32,6 +32,7 @@ public class Movimiento : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+		//Debug.Log (transform.position.x);
 		float inputX = Input.GetAxis ("Horizontal"); // Se mueve en el eje x
 
 

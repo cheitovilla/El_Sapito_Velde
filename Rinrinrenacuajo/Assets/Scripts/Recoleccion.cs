@@ -31,6 +31,8 @@ public class Recoleccion : MonoBehaviour {
 			buttonH.SetActive (false);
 			audio3.Play ();
 			Time.timeScale = 0;
+		//	Debug.Log ("Mk estoy colisionando!!!");
+			Debug.Log (other.transform.position.x);
 			//other.gameObject.SetActive (false);
 			//audio.Play ();
 		}

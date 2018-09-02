@@ -29,7 +29,7 @@ public class Admin_historia1 : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 		}
-		if (player.transform.position.x >= 229) {
+		if (player.transform.position.x >= 230) {
 			Time.timeScale = 0;
 		}
 	}
@@ -42,6 +42,8 @@ public class Admin_historia1 : MonoBehaviour {
 		audio_historia.Play ();
 		button_historia.SetActive (false);
 	}
+
+
 
 	public void CloseHistory()
 	{

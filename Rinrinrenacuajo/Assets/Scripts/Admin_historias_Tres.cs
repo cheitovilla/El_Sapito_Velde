@@ -38,7 +38,7 @@ public class Admin_historias_Tres : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 		}	
-		if (player.transform.position.x >= 175) {
+		if (player.transform.position.x >= 171.5) {
 			Time.timeScale = 0;
 		}
 	}
