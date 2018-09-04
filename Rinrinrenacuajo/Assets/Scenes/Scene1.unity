@@ -3163,6 +3163,66 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 56.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114736786440836942, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b3e9cde729621456f934992b9c40d6e0,
+        type: 3}
+    - target: {fileID: 114736786440836942, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224935852834162598, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.8083772
+      objectReference: {fileID: 0}
+    - target: {fileID: 224935852834162598, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8083772
+      objectReference: {fileID: 0}
+    - target: {fileID: 224935852834162598, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.8083772
+      objectReference: {fileID: 0}
+    - target: {fileID: 224510236195894756, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.1820587
+      objectReference: {fileID: 0}
+    - target: {fileID: 224510236195894756, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.1820588
+      objectReference: {fileID: 0}
+    - target: {fileID: 224510236195894756, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1820588
+      objectReference: {fileID: 0}
+    - target: {fileID: 224591004303873802, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.1000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 224591004303873802, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.1000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 224591004303873802, guid: 3602a4c0eb8ea4324bf99b21982d51e2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1000038
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303294456101846, guid: 3602a4c0eb8ea4324bf99b21982d51e2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3602a4c0eb8ea4324bf99b21982d51e2, type: 2}
   m_IsPrefabParent: 0
@@ -4179,7 +4239,7 @@ Prefab:
     - target: {fileID: 224170506966901852, guid: ae14cd98d4a0f41149c57d70b6089717,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: -418.30933
       objectReference: {fileID: 0}
     - target: {fileID: 114494575692475974, guid: ae14cd98d4a0f41149c57d70b6089717,
         type: 2}
@@ -4201,6 +4261,42 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 56.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164482650923222, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b3e9cde729621456f934992b9c40d6e0,
+        type: 3}
+    - target: {fileID: 224170506966901852, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170506966901852, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170506966901852, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170506966901852, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 224345277671439068, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224345277671439068, guid: ae14cd98d4a0f41149c57d70b6089717,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 306.6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95102039337756520, guid: ae14cd98d4a0f41149c57d70b6089717, type: 2}
