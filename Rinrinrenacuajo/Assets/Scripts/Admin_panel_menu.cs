@@ -34,7 +34,13 @@ public class Admin_panel_menu : MonoBehaviour {
 
 	public void BackInicial()
 	{
-		SceneManager.LoadScene ("Inicial");
+		SceneManager.LoadScene ("Main"); //Antes inicial ahora Main
 	}
+
+	public void QuitApp(){
+		Debug.Log ("Me salí");
+		Application.Quit ();
+	}
+
 
 }
