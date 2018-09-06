@@ -42,5 +42,19 @@ public class Admin_panel_menu : MonoBehaviour {
 		Application.Quit ();
 	}
 
+	public void ScenaUno()
+	{
+		SceneManager.LoadScene ("Scene1");	
+	}
+
+	public void ScenaDos()
+	{
+		SceneManager.LoadScene ("Scene2");	
+	}
+	public void ScenaTres()
+	{
+		SceneManager.LoadScene ("Scene3");
+	}
+
 
 }

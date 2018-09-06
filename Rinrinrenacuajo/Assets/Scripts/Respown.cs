@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Respown : MonoBehaviour {
 
 
     public GameObject player;
+	public GameObject textInfo;
   //  public Transform respown;
 
 	// Use this for initialization
@@ -16,12 +18,26 @@ public class Respown : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Si intenta ir atras
         if (player.transform.position.x < -4.7)
         {
 			player.transform.position = new Vector3(-4.7f, player.transform.position.y);
         }
-		if (player.transform.position.x>238) {  
+		//Si no recoje todas las manzanas, no pasa de niveel
+		if (player.transform.position.x>236 && FindObjectOfType<Recoleccion>().count>=220) 
+		{  
 			SceneManager.LoadScene ("Scene2");
+		}
+		//Se activa text si llega al final del primer nivel y no recolecta todas las manzanas
+		if (player.transform.position.x>=238)
+		{  
+			player.transform.position = new Vector3(238f, player.transform.position.y);
+			textInfo.SetActive (true);
+		} 
+		// sino ,se desactiva
+		else 
+		{
+			textInfo.SetActive (false);	
 		}
     }
 
