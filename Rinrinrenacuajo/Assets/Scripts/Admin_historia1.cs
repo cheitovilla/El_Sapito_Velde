@@ -29,7 +29,7 @@ public class Admin_historia1 : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 		}
-		if (player.transform.position.x >= 230 && FindObjectOfType<Recoleccion>().count >= 240) {
+		if (player.transform.position.x >= 230 && FindObjectOfType<Recoleccion>().count >= 320) {
 			FindObjectOfType<Recoleccion>().panel_3.SetActive (true);
 			FindObjectOfType<Recoleccion>().buttonH.SetActive (false);
 			Time.timeScale = 0;

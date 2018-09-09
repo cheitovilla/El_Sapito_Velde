@@ -48,7 +48,7 @@ public class Recoleccion : MonoBehaviour
 
 		if (other.gameObject.tag == "Afura") 
 		{
-			if (count >= 150) {
+			if (count >= 360) {
 				audio3.Play ();
 			}
 		//	panel_3.SetActive (true);

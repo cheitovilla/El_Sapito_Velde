@@ -38,7 +38,7 @@ public class Admin_historias_Tres : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 		}	
-		if (player.transform.position.x >= 171.5 && FindObjectOfType<Recoleccion>().count >= 150) {
+		if (player.transform.position.x >= 171.5 && FindObjectOfType<Recoleccion>().count >= 360) {
 			FindObjectOfType<Recoleccion>().panel_3.SetActive (true);
 			FindObjectOfType<Recoleccion>().buttonH.SetActive (false);
 			Time.timeScale = 0;
