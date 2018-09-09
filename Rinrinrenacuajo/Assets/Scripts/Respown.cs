@@ -23,8 +23,8 @@ public class Respown : MonoBehaviour {
         {
 			player.transform.position = new Vector3(-4.7f, player.transform.position.y);
         }
-		//Si no recoje todas las manzanas, no pasa de niveel
-		if (player.transform.position.x>236 && FindObjectOfType<Recoleccion>().count>=220) 
+		//Si no recoje todas las manzanas, no pasa de niveel 1
+		if (player.transform.position.x>236 && FindObjectOfType<Recoleccion>().count>=280) 
 		{  
 			SceneManager.LoadScene ("Scene2");
 		}

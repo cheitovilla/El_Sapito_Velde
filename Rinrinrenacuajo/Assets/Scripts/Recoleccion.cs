@@ -39,7 +39,7 @@ public class Recoleccion : MonoBehaviour
 		if (other.gameObject.tag == "Casa") 
 		{
 			// en pos x = 229.8 aprox el trigger
-			if (count >= 240 ) 
+			if (count >= 320 ) 
 			{
 				audio3.Play ();
 			} 

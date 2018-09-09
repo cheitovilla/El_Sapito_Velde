@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 72971c75fd8b94127ad1f2bd26dc2b50
-timeCreated: 1536192567
+guid: 247e1a3fe8c294c33b63f520c68cd318
+timeCreated: 1536468116
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: UI_Niveles_0
-    21300002: UI_Niveles_1
-    21300004: UI_Niveles_2
-    21300006: UI_Niveles_3
+    21300000: niveles_UI_0
+    21300002: niveles_UI_1
+    21300004: niveles_UI_2
+    21300006: niveles_UI_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -94,13 +94,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Niveles_0
+      name: niveles_UI_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1211
-        width: 819
-        height: 309
+        x: 689
+        y: 2928
+        width: 1043
+        height: 377
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,13 +108,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_Niveles_1
+      name: niveles_UI_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 775
-        width: 819
-        height: 309
+        x: 689
+        y: 2516
+        width: 1043
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_Niveles_2
+      name: niveles_UI_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 392
-        width: 819
-        height: 309
+        x: 704
+        y: 2077
+        width: 1043
+        height: 377
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,13 +136,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_Niveles_3
+      name: niveles_UI_3
       rect:
         serializedVersion: 2
-        x: 28
-        y: 2
-        width: 819
-        height: 309
+        x: 704
+        y: 1616
+        width: 1043
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
